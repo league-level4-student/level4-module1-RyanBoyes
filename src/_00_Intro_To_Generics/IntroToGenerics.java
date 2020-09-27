@@ -36,7 +36,7 @@ public class IntroToGenerics {
 	}
 }
 
-//Here a class is created that has a generic called AotherTemplate
+//Here a class is created that has a generic called AnotherTemplate
 //Class generics must be a class, not a primitive data type: int, float, double, boolean, long, short, byte
 class SomeClass<AnotherTemplate>{
 	//Here the t variable can be any object type
