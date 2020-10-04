@@ -36,6 +36,14 @@ public class Snake {
 	public void update() {
 		//1. use a switch statement to check on the currentDirection
 		//   of the snake and calculate its next x and y position.
+		switch(currentDirection) {
+		case RIGHT:
+			
+			
+			
+		
+		
+		}
 		
 
 		//2. Iterate through the SnakeSegments in reverse order

@@ -23,6 +23,7 @@ public class ArrayList <T>{
 		for (int i = 0; i < gen.length; i++) {
 			gen1[i] = gen[i];
 		}
+		gen = gen1;
 	}
 	
 	public void insert(int loc, T val) throws IndexOutOfBoundsException {
@@ -64,7 +65,7 @@ public class ArrayList <T>{
 			}
 			
 		}
-		gen3 = gen;
+		gen = gen3;
 	}
 	
 	public boolean contains(T val) {
