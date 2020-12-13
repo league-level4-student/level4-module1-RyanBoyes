@@ -64,7 +64,7 @@ public class Snake {
 		//2. Iterate through the SnakeSegments in reverse order
 		//2a. Update each snake segment to the location of the segment 
 		//    in front of it.
-		for (int i = snake.size(); i >= 0; i--) {
+		for (int i = snake.size()-2; i >= 0; i--) {
 			snake.get(i).setLocation(snake.get(i+1).getLocation());
 		}
 		
@@ -122,16 +122,16 @@ public class Snake {
 		//1. complete the method so it returns true if the head of the snake is outside of the window
 		//   and false otherwise
 		if(head.getLocation().x<0) {
-			return false;
+			return true;
 		}
 		else if(head.getLocation().x>15) {
-			return false;
+			return true;
 		}
 		else if(head.getLocation().y<0) {
-			return false;
+			return true;
 		}
 		else if(head.getLocation().y>12) {
-			return false;
+			return true;
 		}
 		
 		return false;
